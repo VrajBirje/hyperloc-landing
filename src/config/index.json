@@ -1,0 +1,151 @@
+{
+  "company": {
+    "name": "React landing page 2021",
+    "logo": "/assets/images/logo.png"
+  },
+  "navigation": [
+    {
+      "name": "App",
+      "href": "App"
+    },
+    {
+      "name": "Features",
+      "href": "features"
+    },
+    {
+      "name": "Steps",
+      "href": "Steps"
+    },
+    {
+      "name": "About",
+      "href": "about"
+    }
+  ],
+  "callToAction": {
+    "text": "Get started",
+    "href": "/user"
+  },
+  "mainHero": {
+    "title": "HyperLoc India",
+    "subtitle": "Local Marketplace",
+    "description": "HyperLoc India brings everything to your doorstep—food from your favorite restaurants, groceries, fresh fruits & vegetables, medicines, and more! No app needed—just text us on WhatsApp! Your One-Stop WhatsApp Delivery Partner!",
+    "img": "/assets/images/happyTeam.jpeg",
+    "primaryAction": {
+      "text": "Get started",
+      "href": "/user"
+    },
+    "secondaryAction": {
+      "text": "WhatsApp us",
+      "href": "https://wa.me/8970972576"
+    }
+  },
+  "product": {
+    "title": "App Coming Soon",
+    "items": [
+      {
+        "title": "Food App",
+        "description": "Your favorite food, delivered fast! Order from top restaurants and enjoy delicious meals at your doorstep. Whether it’s a quick snack or a lavish dinner, we bring the best flavors to you with real-time tracking and seamless payment options.",
+        "img": "/meal2.png"
+      },
+      {
+        "title": "Delivery App",
+        "description": "Get groceries, fresh fruits & vegetables, medicines, and daily essentials delivered instantly with HyperLoc India. Shop from trusted stores and enjoy a hassle-free experience with quick delivery, secure payments, and real-time order tracking—bringing convenience to your doorstep!",
+        "img": "/image.png"
+      },
+      {
+        "title": "Store App",
+        "description": "Your favorite food, delivered fast! Order from top restaurants and enjoy delicious meals at your doorstep. Whether it’s a quick snack or a lavish dinner, we bring the best flavors to you with real-time tracking and seamless payment options.",
+        "img": "/meal2.png"
+      }
+    ]
+  },
+  "features": {
+    "title": "Latest & greatest ",
+    "subtitle": "Your One-Stop WhatsApp Delivery Partner!",
+    "description": "HyperLoc India brings everything to your doorstep—food from your favorite restaurants, groceries, fresh fruits & vegetables, medicines, and more! No app needed—just text us on WhatsApp!",
+    "items": [
+      {
+        "name": "Food Delivery",
+        "description": "Order delicious meals from a wide range of nearby restaurants and enjoy fresh, hot food delivered straight to your doorstep in no time.",
+        "icon": "/foodIcon.png"
+      },
+      {
+        "name": "Grocery Delivery",
+        "description": "Get all your daily essentials, home needs, and pantry staples delivered conveniently from local supermarkets and stores.",
+        "icon": "/groceryIcon.png"
+      },
+      {
+        "name": "Pharmacy Delivery",
+        "description": "Need medicines urgently? Order prescribed and over-the-counter drugs with ease and have them delivered safely to your home.",
+        "icon": "/pharmacyIcon.png"
+      },
+      {
+        "name": "Fruits & Vegetables",
+        "description": "Enjoy farm-fresh fruits and vegetables sourced directly from trusted local vendors for a healthier lifestyle.",
+        "icon": "/fruitsIcon.png"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Pricing",
+    "items": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "priceDetails": "for one user",
+        "features": [
+          "1 user",
+          "Basic Support",
+          "1 GB of storage",
+          "Email support"
+        ]
+      },
+      {
+        "name": "Pro",
+        "price": "$15",
+        "priceDetails": "per user",
+        "features": [
+          "5 users",
+          "Priority Support",
+          "10 GB of storage",
+          "Phone and Email support"
+        ]
+      },
+      {
+        "name": "Enterprise",
+        "price": "$29",
+        "priceDetails": "per user",
+        "features": [
+          "50 users",
+          "24/7 Support",
+          "100 GB of storage",
+          "Phone and Email support"
+        ]
+      }
+    ]
+  },
+  "about": {
+    "sections": [
+      {
+        "name": "Terms & Privacy Policy",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+      {
+        "name": "📧 hyperloc@gmail.com",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+      {
+        "name": "📞 89709 72576",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      }
+    ],
+    "socialMedia": {
+      "github": "https://wa.me/8970972576",
+      "twitter": "https://wa.me/8970972576",
+      "linkedin": "https://wa.me/8970972576"
+    }
+  }
+}
