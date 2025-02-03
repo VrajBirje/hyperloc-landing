@@ -1,5 +1,3 @@
-import React from "react";
-
 import About from "../components/About";
 // import Analytics from "../components/Analytics";
 import Canvas from "../components/Canvas";

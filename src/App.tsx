@@ -5,10 +5,6 @@ import Home from './pages'
 // Example Components for Routing
 
 
-function About() {
-  return <h2>About Page</h2>
-}
-
 function App() {
   return (
     <Router>
