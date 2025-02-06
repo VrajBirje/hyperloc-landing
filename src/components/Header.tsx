@@ -5,7 +5,7 @@ import { Popover, Transition } from "@headlessui/react";
 import { Link } from "react-scroll";
 
 import config from "../config/index.json";
-import { BiUser } from "react-icons/bi";
+import { BiMenu } from "react-icons/bi";
 
 const Menu = () => {
   const { navigation, company, callToAction } = config;
@@ -13,7 +13,7 @@ const Menu = () => {
 
   return (
     <>
-      <svg
+      {/* <svg
         className={`hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-background transform translate-x-1/2`}
         fill="white"
         viewBox="0 0 100 100"
@@ -21,19 +21,21 @@ const Menu = () => {
         aria-hidden="true"
       >
         <polygon points="50,0 100,0 50,100 0,100" />
-      </svg>
+      </svg> */}
 
       <Popover>
         <div className="relative pt-6 px-4 sm:px-6 lg:px-8">
           <nav
-            className="relative flex items-center justify-between sm:h-10 lg:justify-start"
+            className="relative flex items-center justify-between sm:h-10"
             aria-label="Global"
           >
             <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
               <div className="flex items-center justify-between w-full md:w-auto">
                 <a href="#">
                   <span className="sr-only">{companyName}</span>
-                  <img alt="logo" className="h-16 w-auto sm:h-16" src={logo} />
+                  {/* <img alt="logo" className="h-16 w-auto sm:h-16" src={logo} /> */}
+                  <div className="font-bold text-[28px]">Hyperloc</div>
+
                 </a>
                 <div className="-mr-2 flex items-center md:hidden">
                   <Popover.Button
@@ -41,7 +43,7 @@ const Menu = () => {
                   >
                     <span className="sr-only">Open main menu</span>
                     {/* <MenuIcon className="h-6 w-6" aria-hidden="true" /> */}
-                    <BiUser/>
+                    <BiMenu size={28}/>
                   </Popover.Button>
                 </div>
               </div>
@@ -61,10 +63,10 @@ const Menu = () => {
                 </Link>
               ))}
               <a
-                href="#"
+                href="/partners"
                 className={`font-medium text-primary hover:text-secondary`}
               >
-                Call to action
+                Join us
               </a>
             </div>
           </nav>
@@ -97,7 +99,7 @@ const Menu = () => {
                   >
                     <span className="sr-only">Close main menu</span>
                     {/* <XIcon className="h-6 w-6" aria-hidden="true" /> */}
-                    <BiUser/>
+                    <BiMenu size={28}/>
                   </Popover.Button>
                 </div>
               </div>

@@ -13,8 +13,8 @@
       "href": "features"
     },
     {
-      "name": "Steps",
-      "href": "Steps"
+      "name": "Partners",
+      "href": "Partners"
     },
     {
       "name": "About",
@@ -23,16 +23,16 @@
   ],
   "callToAction": {
     "text": "Get started",
-    "href": "/user"
+    "href": "/patners"
   },
   "mainHero": {
-    "title": "HyperLoc India",
-    "subtitle": "Local Marketplace",
+    "title": "Your Trusted Hyperlocal Delivery Partner",
+    "subtitle": "From fresh groceries to restaurant meals, daily essentials to medicines—delivered to your doorstep in minutes!",
     "description": "HyperLoc India brings everything to your doorstep—food from your favorite restaurants, groceries, fresh fruits & vegetables, medicines, and more! No app needed—just text us on WhatsApp! Your One-Stop WhatsApp Delivery Partner!",
     "img": "/assets/images/happyTeam.jpeg",
     "primaryAction": {
       "text": "Get started",
-      "href": "/user"
+      "href": "/partners"
     },
     "secondaryAction": {
       "text": "WhatsApp us",
@@ -43,26 +43,26 @@
     "title": "App Coming Soon",
     "items": [
       {
-        "title": "Food App",
-        "description": "Your favorite food, delivered fast! Order from top restaurants and enjoy delicious meals at your doorstep. Whether it’s a quick snack or a lavish dinner, we bring the best flavors to you with real-time tracking and seamless payment options.",
+        "title": "User App",
+        "description": "Order anything you need with the HyperLoc India User App! From fresh groceries and medicines to delicious meals from top restaurants, shop seamlessly from trusted vendors near you. Enjoy fast delivery, real-time tracking, secure payments, and a hassle-free shopping experience—all in one app!",
         "img": "/meal2.png"
       },
       {
         "title": "Delivery App",
         "description": "Get groceries, fresh fruits & vegetables, medicines, and daily essentials delivered instantly with HyperLoc India. Shop from trusted stores and enjoy a hassle-free experience with quick delivery, secure payments, and real-time order tracking—bringing convenience to your doorstep!",
-        "img": "/image.png"
+        "img": "/delivery.png"
       },
       {
         "title": "Store App",
         "description": "Your favorite food, delivered fast! Order from top restaurants and enjoy delicious meals at your doorstep. Whether it’s a quick snack or a lavish dinner, we bring the best flavors to you with real-time tracking and seamless payment options.",
-        "img": "/meal2.png"
+        "img": "/shop.png"
       }
     ]
   },
   "features": {
-    "title": "Latest & greatest ",
+    "title": "Products & Services ",
     "subtitle": "Your One-Stop WhatsApp Delivery Partner!",
-    "description": "HyperLoc India brings everything to your doorstep—food from your favorite restaurants, groceries, fresh fruits & vegetables, medicines, and more! No app needed—just text us on WhatsApp!",
+    "description": "HyperLoc India brings everything to your doorstep—food from your favorite restaurants, groceries, fresh fruits & vegetables, medicines, and more!",
     "items": [
       {
         "name": "Food Delivery",
@@ -90,7 +90,7 @@
     "title": "Pricing",
     "items": [
       {
-        "name": "Free",
+        "name": "What We Deliver?",
         "price": "$0",
         "priceDetails": "for one user",
         "features": [
@@ -101,25 +101,25 @@
         ]
       },
       {
-        "name": "Pro",
+        "name": "How It Works?",
         "price": "$15",
         "priceDetails": "per user",
         "features": [
-          "5 users",
-          "Priority Support",
-          "10 GB of storage",
-          "Phone and Email support"
+          "1️⃣ Browse & Choose: Check out the available products and services.",
+          "2️⃣ Order via WhatsApp: Send us a message with your requirements.",
+          "3️⃣ Quick Confirmation: Our team confirms and processes your order.",
+          "4️⃣ Swift Delivery: Get your order delivered at your doorstep in no time."
         ]
       },
       {
-        "name": "Enterprise",
+        "name": "Why HyperLoc India?",
         "price": "$29",
         "priceDetails": "per user",
         "features": [
-          "50 users",
-          "24/7 Support",
-          "100 GB of storage",
-          "Phone and Email support"
+          "✅ Super Fast Delivery – Get your orders within minutes.",
+          "✅ No App Needed – Just place your order via WhatsApp.",
+          "✅ Wide Range of Products – From groceries to medicines, we deliver everything",
+          "✅ Local Business Friendly – Supporting local vendors and restaurants."
         ]
       }
     ]

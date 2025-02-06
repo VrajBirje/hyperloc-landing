@@ -5,10 +5,10 @@ import Features from "../components/Features";
 import Header from "../components/Header";
 import LazyShow from "../components/LazyShow";
 import MainHero from "../components/MainHero";
-import MainHeroImage from "../components/MainHeroImage";
+import Partner from "../components/partner";
+import Pricing from "../components/Pricing";
 // import Pricing from '../components/Pricing';
 import Product from "../components/Product";
-import Timeline from "../components/Timeline";
 
 const Home = () => {
   return (
@@ -17,15 +17,21 @@ const Home = () => {
         <div className="max-w-7xl mx-auto ">
           <div
             style={{ background: "white", zIndex: "999" }}
-            className={`relative z-10 pb-8 md:h-[100vh] bg-background sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32`}
+            className={`outer relative z-10 md:h-[100vh] bg-background w-full`}
           >
             <Header />
             <MainHero />
           </div>
         </div>
-        <MainHeroImage />
+        {/* <MainHeroImage /> */}
       </div>
       <Canvas />
+      <LazyShow>
+        <>
+          <Partner/>
+          <Canvas />
+        </>
+      </LazyShow>
       <LazyShow>
         <>
           <Product />
@@ -36,7 +42,8 @@ const Home = () => {
         <>
           <Features />
           <Canvas />
-          <Timeline />
+          <Pricing />
+          {/* <Timeline /> */}
         </>
       </LazyShow>
       <LazyShow>

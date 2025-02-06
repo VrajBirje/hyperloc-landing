@@ -1,119 +1,101 @@
 import config from "../config/index.json";
+// import Divider from "./Divider";
 
-const Pricing = () => {
-  const { pricing } = config;
-  const { items, title } = pricing;
-  const [firstPlan, secondPlan, thirdPlan] = items;
+const Product = () => {
+  const { product } = config;
+  const [firstItem, secondItem, thirdItem] = product.items;
 
   return (
-    <section className={`bg-background py-8`} id="pricing">
-      <div className={`container mx-auto px-2 pt-4 pb-12 text-primary`}>
+    <section className={`bg-background py-8`} id="about">
+      <div className={`container max-w-5xl flex flex-col mx-auto m-8`}>
         <h1
           className={`w-full my-2 text-5xl font-bold leading-tight text-center text-primary`}
         >
-          {title}
+          <span
+            className="text-[#ec4755]"
+          >
+            About us
+          </span>
         </h1>
-        <div className={`w-full mb-4`}>
+        <p className="text-xl font-regular text-[#ec4755] text-center">HyperLoc India: Revolutionizing Local Deliveries</p>
+        <p className="text-md px-3 text-gray-600 font-semibold text-center">At HyperLoc India, we bridge the gap between local businesses and consumers by providing seamless, fast, and reliable hyperlocal deliveries. Whether it’s food from your favorite restaurant, fresh produce from nearby markets, or essential groceries and medicines, we ensure it reaches you on time.</p>
+        {/* <Divider /> */}
+        <div className={`flex flex-wrap`}>
+          <div className={`w-full sm:w-1/2 p-6 mt-20`}>
+            <h3
+              style={{ color: "#ec4755" }}
+              className={`text-3xl text-gray-800 text-[#ec4755] font-bold leading-none mb-3`}
+            >
+              💡 Why HyperLoc India?
+            </h3>
+            <ul className={`text-gray-600 text-lg`}>
+              <li className="flex"><p>✅</p><p><strong>Super Fast Delivery –</strong> Get your orders within minutes.</p></li>
+              <li className="flex"><p>✅</p><p><strong>No App Needed –</strong> Just place your order via WhatsApp.</p></li>
+              <li className="flex"><p>✅</p><p><strong>Wide Range of Products –</strong> From groceries to medicines, we deliver everything.</p></li>
+              <li className="flex"><p>✅</p><p><strong>Local Business Friendly –</strong> Supporting local vendors and restaurants.</p></li>
+            </ul>
+          </div>
           <div
-            className={`h-1 mx-auto bg-primary w-64 opacity-25 my-0 py-0 rounded-t`}
-          ></div>
+            className={`w-full sm:w-1/2 p-6 flex items-start justify-center`}
+          >
+            <img
+              className="h-[250px] mt-20"
+              src="whyhyperloc.jpg"
+              alt={firstItem?.title}
+            />
+          </div>
         </div>
-        <div
-          className={`flex flex-col sm:flex-row justify-center pt-12 my-12 sm:my-4`}
-        >
+        <div className={`flex flex-wrap-reverse flex-col-reverse sm:flex-row`}>
           <div
-            className={`flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-background mt-4`}
+            className={`w-full sm:w-1/2 p-6 flex items-start justify-center`}
           >
-            <div
-              className={`flex-1 bg-background text-gray-600 rounded-t rounded-b-none overflow-hidden shadow`}
-            >
-              <div className={`p-8 text-3xl font-bold text-center border-b-4`}>
-                {firstPlan?.name}
-              </div>
-              <ul className={`w-full text-center text-sm`}>
-                {firstPlan?.features.map((feature) => (
-                  <li
-                    className={`border-b py-4`}
-                    key={`${firstPlan.name}-${feature}`}
-                  >
-                    {feature}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div
-              className={`flex-none mt-auto bg-background rounded-b rounded-t-none overflow-hidden shadow p-6`}
-            >
-              <div
-                className={`w-full pt-6 text-3xl text-gray-600 font-bold text-center`}
+            <img
+              className="h-[250px] mt-20"
+              src="/howitworks.png"
+              alt={secondItem?.title}
+            />
+          </div>
+          <div className={`w-full sm:w-1/2 p-6 mt-20`}>
+            <div className={`align-middle`}>
+              <h3
+                style={{ color: "#ec4755" }}
+                className={`text-3xl text-[#ec4755] font-bold leading-none mb-3`}
               >
-                {firstPlan?.price}
-                <span className={`text-base`}> {firstPlan?.priceDetails}</span>
-              </div>
+                How It Works?
+              </h3>
+              <ul className={`text-gray-600 text-lg`}>
+                <li className="flex"><p>1️⃣</p><p><strong>Browse & Choose –</strong> Check out the available products and services.</p></li>
+                <li className="flex"><p>2️⃣</p><p><strong>Order via WhatsApp –</strong> Send us a message with your requirements.</p></li>
+                <li className="flex"><p>3️⃣</p><p><strong>Quick Confirmation –</strong> Our team confirms and processes your order.</p></li>
+                <li className="flex"><p>4️⃣</p><p><strong>Swift Delivery –</strong> Get your order delivered at your doorstep in no time.</p></li>
+              </ul>
             </div>
           </div>
-          <div
-            className={`flex flex-col w-5/6 lg:w-1/3 mx-auto lg:mx-0 rounded-lg bg-background mt-4 sm:-mt-6 shadow-lg z-10`}
-          >
-            <div
-              className={`flex-1 bg-background rounded-t rounded-b-none overflow-hidden shadow`}
+        </div>
+        <div className={`flex flex-wrap`}>
+          <div className={`w-full sm:w-1/2 p-6 mt-20`}>
+            <h3
+              style={{ color: "#ec4755" }}
+              className={`text-3xl text-gray-800 text-[#ec4755] font-bold leading-none mb-3`}
             >
-              <div className={`w-full p-8 text-3xl font-bold text-center`}>
-                {secondPlan?.name}
-              </div>
-              <div
-                className={`h-1 w-full bg-primary my-0 py-0 rounded-t`}
-              ></div>
-              <ul className={`w-full text-center text-base font-bold`}>
-                {secondPlan?.features.map((feature) => (
-                  <li
-                    className={`border-b py-4`}
-                    key={`${secondPlan?.name}-${feature}`}
-                  >
-                    {feature}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div
-              className={`flex-none mt-auto bg-background rounded-b rounded-t-none overflow-hidden shadow p-6`}
-            >
-              <div className={`w-full pt-6 text-4xl font-bold text-center`}>
-                {secondPlan?.price}
-                <span className={`text-base`}> {secondPlan?.priceDetails}</span>
-              </div>
-            </div>
+              What We Deliver?
+            </h3>
+            <ul className={`text-gray-600 text-lg`}>
+              <li className="flex"><p>🍽️</p><span><strong>Restaurant Food –</strong> Your favorite meals from top local eateries.</span></li>
+              <li className="flex"><p>🍏</p><span><strong>Groceries & Fresh Produce –</strong> Fresh fruits, vegetables, and essentials.</span></li>
+              <li className="flex"><p>🛒</p><span><strong>Daily Needs & Essentials –</strong> Dairy, snacks, beverages, and more.</span></li>
+              <li className="flex"><p>💊</p><span><strong>Medicines –</strong> Get pharmacy essentials delivered quickly.</span></li>
+            </ul>
+
           </div>
           <div
-            className={`flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-primary mt-4`}
+            className={`w-full sm:w-1/2 p-6 flex items-start justify-center`}
           >
-            <div
-              className={`flex-1 bg-background text-gray-600 rounded-t rounded-b-none overflow-hidden shadow`}
-            >
-              <div className={`p-8 text-3xl font-bold text-center border-b-4`}>
-                {thirdPlan?.name}
-              </div>
-              <ul className={`w-full text-center text-sm`}>
-                {thirdPlan?.features.map((feature) => (
-                  <li
-                    className={`border-b py-4`}
-                    key={`${thirdPlan?.name}-${feature}`}
-                  >
-                    {feature}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div
-              className={`flex-none mt-auto bg-background rounded-b rounded-t-none overflow-hidden shadow p-6`}
-            >
-              <div
-                className={`w-full pt-6 text-3xl text-gray-600 font-bold text-center`}
-              >
-                {thirdPlan?.price}
-                <span className={`text-base`}> {thirdPlan?.priceDetails}</span>
-              </div>
-            </div>
+            <img
+              className="mt-20 h-[250px]"
+              src="/whatdeliver.jpg"
+              alt={thirdItem?.title}
+            />
           </div>
         </div>
       </div>
@@ -121,4 +103,4 @@ const Pricing = () => {
   );
 };
 
-export default Pricing;
+export default Product;
