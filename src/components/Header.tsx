@@ -3,7 +3,7 @@ import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 // import { MenuIcon, UserIcon, XIcon } from "@heroicons/react/outline";
 import { Link } from "react-scroll";
-
+import hyperloclogo from "/logo.png";
 import config from "../config/index.json";
 import { BiMenu } from "react-icons/bi";
 
@@ -34,7 +34,9 @@ const Menu = () => {
                 <a href="#">
                   <span className="sr-only">{companyName}</span>
                   {/* <img alt="logo" className="h-16 w-auto sm:h-16" src={logo} /> */}
-                  <div className="font-bold text-[28px]">Hyperloc</div>
+                  <div className="font-bold text-[28px]">
+                    <img src={hyperloclogo} alt="logo" width={130} height={100} />
+                  </div>
 
                 </a>
                 <div className="-mr-2 flex items-center md:hidden">

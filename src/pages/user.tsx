@@ -1,7 +1,7 @@
 import { useState } from "react";
 import DeliverymanForm from "./Deliveryman";
 import VendorForm from "./Vendor";
-
+import hyperloclogo from "/logo.png";
 // // Define types for formData and errors
 // interface FormData {
 //   name: string;
@@ -233,7 +233,9 @@ const User = () => {
       {!role ? (
         <>
           <h1 className="text-4xl flex flex-wrap justify-center align-center text-black font-bold text-center">
-            Partner with <p className="text-4xl text-[#ec4755] mx-4 font-bold text-center">Hyperloc</p>
+            Partner with <p className="text-4xl text-[#ec4755] mx-4 font-bold text-center">
+            <img src={hyperloclogo} alt="logo" width={180} height={100} />
+            </p>
           </h1>
           <div className="w-[40vw] flex flex-col gap-[30px]">
             {/* <button

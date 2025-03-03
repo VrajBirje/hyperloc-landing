@@ -1,5 +1,5 @@
 import config from "../config/index.json";
-
+import hyperloclogo from "/logo.png";
 const About = () => {
   const { about } = config;
   // const { logo, name: companyName } = company;
@@ -13,7 +13,9 @@ const About = () => {
       <div className="flex flex-col items-center justify-center">
         <div>
           {/* <img src={logo} alt={companyName} className="w-16 h-16" /> */}
-          <div className="font-bold text-[28px] text-[#ec4755]">Hyperloc</div>
+          <div className="font-bold text-[28px] text-[#ec4755]">
+            <img src={hyperloclogo} alt="logo" width={130} height={100} />
+          </div>
         </div>
         <div className="flex flex-wrap sm:gap-10 gap-8 items-center justify-center mt-4 h-12">
           {sections.map((section, index) => (
